@@ -1,0 +1,211 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fbeced;
+}
+.hauptseite {
+  position: absolute;
+  background-color: #23204b;
+  width: 80%;
+  height: 125vh;
+  margin-left: 12rem;
+  margin-top: 4rem;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -2.7rem;
+}
+h1 {
+  color: #f7d2d6;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  text-align: center;
+}
+.header-line {
+  background-color: #312c54;
+  width: 30%;
+  height: 1px;
+  margin: 2.5rem;
+}
+.logo {
+  width: 80px;
+  height: 50px;
+  margin-left: 46rem;
+}
+.optionen {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: small;
+  height: 8rem;
+}
+.optionen a {
+  color: #f7d2d6;
+  text-decoration: none;
+  margin: 2rem;
+}
+.optionen > a:hover {
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+.text-img {
+  border: 1px solid #312c54;
+  width: 75%;
+  height: 40%;
+  margin-left: 12rem;
+  color: #f7d2d6;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -1rem;
+}
+.text {
+  margin-top: 7rem;
+  margin-left: 1rem;
+  list-style: none;
+}
+.erste-text {
+  font-size: 0.8em;
+}
+.zweite-text {
+  font-size: 3.5rem;
+}
+.dritte-text {
+  line-height: 1.5;
+}
+.img1 {
+  border-radius: 260px;
+  width: 400px;
+  height: 37rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 5px 140px 15px rgba(57, 99, 150, 0.61);
+}
+.box {
+  background-color: #f7d2d6;
+  width: 35%;
+  height: 20%;
+  color: #2f1a33;
+  float: right;
+  margin-top: 12rem;
+  margin-right: 17rem;
+  padding: 2rem 0rem 0rem 4rem;
+  line-height: 1.5;
+  font-size: larger;
+}
+
+.ecke {
+  background-color: #2b285d;
+  margin-top: 16rem;
+  width: 483px;
+  height: 537px;
+  position: absolute;
+  z-index: 2;
+  top: 30.5rem;
+  margin-left: 12rem;
+}
+
+.img2 {
+  width: 370px;
+  height: 510px;
+  margin-left: 7.3rem;
+  z-index: 1;
+}
+.freibox {
+  position: absolute;
+  background-color: pink;
+  width: 30%;
+  height: 55.5%;
+  margin-top: 46.3rem;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .hauptseite {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-left: 0rem;
+  }
+  .header-line {
+    width: 10%;
+    height: 2px;
+    margin: 3rem;
+  }
+  .logo {
+    margin-left: 11.5rem;
+  }
+  .optionen {
+    flex-direction: column;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .optionen a {
+    margin: 1rem;
+  }
+  .text-img {
+    width: 100%;
+    height: 40%;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  .text {
+    margin-top: 7rem;
+    margin-left: 1rem;
+    list-style: none;
+  }
+
+  .img1 {
+    margin-left: 0.7rem;
+  }
+  .box {
+    width: 100%;
+    float: none;
+    margin-top: 42rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .ecke {
+    margin-top: 56rem;
+    width: auto;
+
+    position: absolute;
+    z-index: 2;
+    top: 30.5rem;
+    margin-left: 0rem;
+  }
+
+  .img2 {
+    width: 370px;
+    height: 510px;
+    margin-left: 1.7rem;
+    z-index: 1;
+  }
+  .freibox {
+    display: none;
+  }
+}

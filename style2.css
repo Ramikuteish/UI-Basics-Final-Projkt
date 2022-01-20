@@ -1,0 +1,514 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fbeced;
+}
+.frei {
+  position: absolute;
+  background-color: pink;
+  width: 100%;
+  height: 121%;
+  margin-top: 44rem;
+  opacity: 0.5;
+  z-index: 0;
+}
+.hauptseite {
+  position: absolute;
+  background-color: #23204b;
+  width: 80%;
+  height: 187vh;
+  margin-left: 12rem;
+  margin-top: 4rem;
+  z-index: 1;
+}
+.oben {
+  display: flex;
+  justify-content: space-around;
+}
+.erste-liste {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+  font-size: small;
+  margin-top: -2rem;
+}
+.erste-liste a {
+  color: #696784;
+  text-decoration: none;
+  margin: 2rem;
+}
+.logo {
+  width: 80px;
+  height: 50px;
+  margin-left: -14rem;
+}
+.zweite-liste {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem;
+  font-size: small;
+  margin-top: -1rem;
+}
+.zweite-liste a {
+  color: #696784;
+  text-decoration: none;
+  margin: 1rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -2.3rem;
+}
+h1 {
+  color: #f7d2d6;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0rem;
+}
+.header-line {
+  background-color: #312c54;
+  width: 30%;
+  height: 1px;
+  margin: 3rem;
+  margin-top: 1rem;
+}
+
+.optionen {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: small;
+  height: 10rem;
+}
+.optionen a {
+  color: #f7d2d6;
+  text-decoration: none;
+  margin: 3rem;
+}
+.optionen > a:hover {
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+.wino {
+  border: 1px solid #f7d2d6;
+  border-radius: 160px;
+  height: 260px;
+  width: 70%;
+  margin-left: 14rem;
+}
+.wino > p {
+  color: #f7d2d6;
+  font-size: 70px;
+  text-align: center;
+}
+.wino-liste > a {
+  text-decoration: none;
+  color: #696784;
+  margin: 2rem;
+}
+.wino-liste {
+  text-align: center;
+  margin-top: -3rem;
+}
+.wino-liste > a:hover {
+  color: #f7d2d6;
+  border: 3px solid #756581;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.5rem;
+}
+.zwei-divs-lines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.kleine-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4rem;
+}
+.kleine-box > li {
+  border: 1px solid #4a476b;
+  width: auto;
+  height: auto;
+  color: #9694a9;
+  list-style: none;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  font-size: medium;
+  font-weight: 100;
+}
+.p-input-logo {
+  display: flex;
+  flex-direction: row;
+  color: #c2c1cd;
+  margin-top: 4rem;
+  margin-right: 6rem;
+  gap: 1rem;
+}
+#name {
+  width: 100%;
+  height: 20%;
+  border: 1px solid #423f64;
+  background-color: #23204b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 1rem;
+}
+#caret-down {
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+.bord {
+  font-size: xx-large;
+  font-weight: bolder;
+  border: 1px solid #c2c1cd;
+  width: 75px;
+  height: 38px;
+  margin-top: 0rem;
+  text-align: center;
+}
+#align-justify {
+  margin-top: 0.7rem;
+}
+.großediv {
+  display: flex;
+}
+.plusminusliste {
+  list-style: none;
+  color: #e1e0e6;
+  margin-left: 100px;
+  width: 30%;
+
+  padding: 3rem;
+}
+.gleichline-plus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #86859c;
+}
+.gleichline-plus > i {
+  margin-top: 1rem;
+}
+.line-zwichen-liste {
+  border: 1px solid #302a53;
+}
+.sechs-produkte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+.produkte1,
+.produkte3,
+.produkte4,
+.produkte5,
+.produkte6 {
+  border: 1px solid #2b285d;
+  background-color: #34105f;
+  width: 27%;
+  height: 49%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#herz1 {
+  text-align: right;
+  color: #b6b5c7;
+  padding: 1rem;
+}
+.produkte1 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+.background-img {
+  border: 1px solid #f8d9dc;
+  width: 150px;
+  height: 150px;
+  background-color: #f8d9dc;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 4.5rem;
+}
+
+.erste {
+  text-align: center;
+  color: #626187;
+}
+h3 {
+  text-align: center;
+  color: #e4c2cb;
+  margin-top: 0rem;
+}
+.liste1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: auto;
+  margin-left: 1rem;
+}
+.produkte1 > div > li,
+.produkte3 > div > li,
+.produkte4 > div > li,
+.produkte5 > div > li,
+.produkte6 > div > li {
+  border: 1px solid #4a476b;
+  width: auto;
+  height: auto;
+  color: #656289;
+  list-style: none;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  font-size: smaller;
+}
+.zweite {
+  color: #bfbfce;
+  padding: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.produkte2 {
+  border: 1px solid #f7d2d6;
+  background-color: #f7d2d6;
+  width: 27%;
+  height: 49%;
+}
+
+#herz2 {
+  float: right;
+  color: #23204b;
+  padding: 1rem;
+  font-size: large;
+}
+.produkte2 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.background-img2 {
+  border: 1px solid #39347c;
+  width: 150px;
+  height: 150px;
+  background-color: #39347c;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 4.5rem;
+}
+.produkte2 > h3 {
+  color: #332f5e;
+}
+.produkte2 > div > li {
+  border: 1px solid #fdf2f3;
+  width: auto;
+  height: auto;
+  color: #8c7890;
+  list-style: none;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  font-size: smaller;
+}
+.liste2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: auto;
+  margin-left: 1rem;
+}
+.preise {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.strich {
+  color: #b99eb0;
+  text-decoration: line-through;
+}
+.produkte3 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+.produkte4 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+.produkte5 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+.produkte6 > img {
+  width: 88%;
+  height: 200px;
+  margin-left: 1.2rem;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+.herz-angebot {
+  display: flex;
+  justify-content: space-between;
+}
+.angebot {
+  border: 1px solid #eae9ef;
+  background-color: #eae9ef;
+  width: 75px;
+  height: 55px;
+  padding: 1.2rem;
+  margin: 0%;
+}
+#herz3 {
+  text-align: right;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: medium;
+  margin-top: 0;
+}
+@media screen and (max-width: 425px) {
+  .frei {
+    display: none;
+  }
+  .hauptseite {
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+  }
+  .oben {
+    flex-direction: column-reverse;
+  }
+  .erste-liste {
+    display: none;
+  }
+  .logo {
+    width: 80px;
+    height: 50px;
+    margin-left: 11.5rem;
+    margin-top: -1rem;
+  }
+  .zweite-liste {
+    margin-top: -1rem;
+  }
+
+  h1 {
+    margin-top: 2rem;
+  }
+  .header-line {
+    width: 40%;
+    height: 2px;
+    margin-top: 4rem;
+  }
+  .optionen {
+    flex-direction: column;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .optionen a {
+    margin: 1.2rem;
+  }
+  .wino {
+    border-radius: 25%;
+    height: 300px;
+    width: 90%;
+    margin-left: 1.2rem;
+    margin-top: 6rem;
+  }
+  .zwei-divs-lines {
+    flex-direction: column;
+  }
+
+  .kleine-box {
+    flex-wrap: nowrap;
+    margin: 1rem;
+  }
+  .kleine-box > li {
+    font-size: small;
+  }
+  .p-input-logo {
+    margin-right: 1rem;
+    gap: 0.5rem;
+  }
+
+  .bord {
+    font-size: x-large;
+    height: 32px;
+  }
+  .großediv {
+    display: flex;
+  }
+  .plusminusliste {
+    display: none;
+  }
+  .sechs-produkte {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+  }
+  .produkte1,
+  .produkte3,
+  .produkte4,
+  .produkte5,
+  .produkte6 {
+    width: 90%;
+    flex-direction: column;
+    margin-left: 1.2rem;
+  }
+
+  .background-img {
+    margin-left: 6.9rem;
+  }
+  .produkte2 {
+    width: 90%;
+    margin-left: 1.2rem;
+  }
+
+  .background-img2 {
+    margin-left: 6.8rem;
+  }
+}
